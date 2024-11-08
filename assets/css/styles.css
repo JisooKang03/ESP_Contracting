@@ -229,11 +229,24 @@ button {
 
 
 /*=============== HOME ===============*/
-.home {
+/* .home  {
     background: linear-gradient(170deg,
      hsl(0, 0%, 22%) 0%,
      hsl(0, 0%, 6%) 30%);
     padding-bottom: 0;;
+} */
+.video-background video {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place it behind other content */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover; /* Ensures the video covers the whole area without stretching */
+    opacity: .5;
 }
 
 .home__container{
@@ -253,7 +266,7 @@ button {
 }
 
 .home__description{
-    color: var(--text-color-light);
+    color: linear-gradient(101deg, hsl(228, 76%, 60%), hsl(272, 63%, 42%));
     margin-bottom: 2rem;
 }
 .home__search{
@@ -365,8 +378,8 @@ button {
 
 .logos__img img{
     width: 100%;
-    height: 100%;
-    opacity: .5;
+    height: 90%;
+    opacity: .8;
     transform: .3s;
     object-fit: cover;
     border-radius: .75rem;
@@ -374,7 +387,7 @@ button {
 }
 
 .logos__img img:hover{
-    opacity: .8;
+    opacity: .5;
 }
 
 .logos__img p {
