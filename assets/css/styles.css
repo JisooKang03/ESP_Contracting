@@ -163,7 +163,7 @@ button {
 }
 
 .nav__logo{
-    color: var(271.3,68.5%,32.4%);
+    color: var(--first-color);
     display: inline-flex;
     align-items: center;
     column-gap: .25rem;
@@ -178,6 +178,13 @@ button {
 
 .nav__logo:hover{
     color: var(--second-color);
+}
+
+.nav__button {
+    position: absolute;
+    right: 1rem; /* Adjust the value as needed */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @media screen and (min-width: 1023px){
@@ -320,12 +327,7 @@ button {
     justify-content: center;
 }
 
-.home__orbe{
-    width: 265px;
-    height: 284px;
-    background: linear-gradient(180deg, hsl(0, 0%, 16%) 93%, hsl(0, 0%, 67%) 100%);
-    border-radius: 135px 135px 0 0;
-}
+
 
 .home__img{
     position: absolute;
@@ -362,9 +364,7 @@ button {
 .button:hover{
     box-shadow: 0 4px 12px hsl(228, 66%, 45%, .25%);
 }
-.nav__button{
-    display: none;
-}
+
 
 
 
