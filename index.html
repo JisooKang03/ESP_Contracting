@@ -22,7 +22,7 @@
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            <nav class="nav container">
+            <nav class="nav">
                 <a href="#" class="nav__logo">
                     ESP Contracting <i class='bx bx-home' ></i>
                 </a>
@@ -33,13 +33,6 @@
                             <a href="#home" class="nav__link active-link">
                                 <i class='bx bx-home-alt-2' ></i>
                                 <span>Home</span>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class='bx bx-buildings'></i>
-                                <span>About</span>
                             </a>
                         </li>
 
@@ -61,6 +54,13 @@
                             <a href="#contact" class="nav__link">
                                 <i class='bx bx-phone'></i>
                                 <span>Contact</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#footer" class="nav__link">
+                                <i class='bx bx-copyright' ></i>
+                                <span>Footer</span>
                             </a>
                         </li>
                     </ul>
@@ -160,7 +160,7 @@
             </section>
 
             <!--==================== SERVICES ====================-->
-            <section class="Services section" id="service">
+            <section class="Services section" id="services">
                 <div class="container">
                     <span class="section__subtitle">Best Choices</span>
                     <h2 class="section__title">
@@ -435,7 +435,7 @@
             </section>
 
             <!--==================== GET ESTIMATE ====================-->
-            <section class="estimate section">
+            <section class="estimate section" id="estimate">
                 <div class="estimate__container container">
                     <h1 class="estimate__title">
                         Get A Free Estimate
@@ -443,7 +443,7 @@
                     <p class="estimate__description">
                         Contact us today for a free estimate or consultation on your next project.
                     </p>
-                    <a href="" class="button estimate__button">
+                    <a href="#estimate" class="button estimate__button">
                         Contact Us
                     </a>
                 </div>
@@ -451,15 +451,16 @@
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer section">
+        <footer class="footer section" id="footer">
             <div class="footer__container container grid">
                 <div>
-                    <a href="#" class="footer__logo">
+                    <a href="https://www.instagram.com/esp_contracting/" class="footer__logo">
                         ESP-CONTRACTING <i class='bx bxs-home-alt-2'></i>
                     </a>
                     <p class="footer__description">
-                        Experienced contractor specializing in home renovations, kitchen and bathroom remodeling, and general construction. Quality craftsmanship and reliable service you can trust. 
-                        <br>Contact us today for a free estimate or consultation on your next project.
+                        Experienced contractor specializing in home renovations, kitchen and bathroom 
+                        <br>remodeling, and general construction. Quality craftsmanship and reliable service you can trust. 
+                        <br> Contact us today for a free estimate or consultation on your next project.
                     </p>
                 </div>
 
@@ -560,7 +561,7 @@
             <i class='bx bx-chevrons-up'></i>
         </a>
         <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+        <script src="assets/js/scrollreveal.min.js"></script>
 
         <!--=============== SWIPER JS ===============-->
         <script src="assets/js/swiper-bundle.min.js"></script>
