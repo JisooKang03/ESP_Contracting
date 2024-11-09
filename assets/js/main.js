@@ -60,7 +60,7 @@ function scrollActive(){
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
-        sectionTop = current.offsetTop - 50,
+        sectionTop = current.offsetTop - 58,
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
@@ -69,8 +69,8 @@ function scrollActive(){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
-    window.addEventListener('scroll', scrollActive)
 }
+window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 function scrollUp(){
@@ -110,3 +110,18 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2300,
+    delay: 300,
+    // reset: true
+})
+
+sr.reveal(`.home__title, .services__container, .estimate__container, .footer__container `)
+sr.reveal(`.home__description, .footer__info`, {delay: 500})
+sr.reveal(`.home__search`, {delay: 600})
+sr.reveal(`.home__about`, {delay: 700})
+sr.reveal(`.logos__img`, {interval: 100})
+sr.reveal(`.project__images, .contact__content`, {origin: 'left'})
+sr.reveal(`.project__content, .contact__images`, {origin: 'right'})
